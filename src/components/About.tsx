@@ -76,6 +76,10 @@ const StyledAbout = styled.section`
       }
     }
   }
+
+  .waves {
+    max-width: 100%;
+  }
 `;
 
 function About({ }: Props): ReactElement {

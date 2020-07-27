@@ -14,8 +14,8 @@ const StyledFooter = styled.footer`
   color: rgba(255,255,255, 0.8);
 
   img {
-    max-width: 80vw;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   p.copy {

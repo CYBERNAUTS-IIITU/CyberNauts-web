@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
-import Navbar from './Navbar'
-import Hero from './Hero'
+import '../styles/style.css';
+
 
 interface Props {
   children?: ReactElement;
@@ -9,8 +9,6 @@ interface Props {
 function Layout({children}: Props): ReactElement {
   return (
     <>
-      <Navbar />
-      <Hero />
       {children}
     </>
   )
