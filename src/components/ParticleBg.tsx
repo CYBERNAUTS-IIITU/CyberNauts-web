@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react'
-import ParticlesBg from "particles-bg";
+import loadable from '@loadable/component'
+const ParticlesBg = loadable(() => import('particles-bg'))
 
 interface Props {
   children?: ReactElement | undefined;
