@@ -13,6 +13,11 @@ const StyledFooter = styled.footer`
   background-repeat: no-repeat;
   color: rgba(255,255,255, 0.8);
 
+  img {
+    max-width: 80vw;
+    margin: auto;
+  }
+
   p.copy {
     font-size: 1.1rem;
     text-align: center;
