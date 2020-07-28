@@ -55,11 +55,10 @@ export default function Events() {
         <img src={logo} alt="coderation" />
         <div className="info">
           <p className="date">
-            20.09.2020
+            10.08.2020
           </p>
           <p className="desc">
-            Lorem ipsum dolor sit.
-            Lorem ipsum dolor sit.
+            Online workshop on getting started with react;
           </p>
           <Link to="/events/001">
             <p className="link">Read more</p>
@@ -70,93 +69,16 @@ export default function Events() {
         <img src={logo} alt="coderation" />
         <div className="info">
           <p className="date">
-            20.09.2020
+            20.08.2020
           </p>
           <p className="desc">
-            Lorem ipsum dolor sit.
-            Lorem ipsum dolor sit.
+            Getting started with routing in a react SPA.
           </p>
           <Link to="/events/001">
             <p className="link">Read more</p>
           </Link>
         </div>
       </div>
-      <div className="item">
-        <img src={logo} alt="coderation" />
-        <div className="info">
-          <p className="date">
-            20.09.2020
-          </p>
-          <p className="desc">
-            Lorem ipsum dolor sit.
-            Lorem ipsum dolor sit.
-          </p>
-          <Link to="/events/001">
-            <p className="link">Read more</p>
-          </Link>
-        </div>
-      </div>
-      <div className="item">
-        <img src={logo} alt="coderation" />
-        <div className="info">
-          <p className="date">
-            20.09.2020
-          </p>
-          <p className="desc">
-            Lorem ipsum dolor sit.
-            Lorem ipsum dolor sit.
-          </p>
-          <Link to="/events/001">
-            <p className="link">Read more</p>
-          </Link>
-        </div>
-      </div>
-      <div className="item">
-        <img src={logo} alt="coderation" />
-        <div className="info">
-          <p className="date">
-            20.09.2020
-          </p>
-          <p className="desc">
-            Lorem ipsum dolor sit.
-            Lorem ipsum dolor sit.
-          </p>
-          <Link to="/events/001">
-            <p className="link">Read more</p>
-          </Link>
-        </div>
-      </div>
-      <div className="item">
-        <img src={logo} alt="coderation" />
-        <div className="info">
-          <p className="date">
-            20.09.2020
-          </p>
-          <p className="desc">
-            Lorem ipsum dolor sit.
-            Lorem ipsum dolor sit.
-          </p>
-          <Link to="/events/001">
-            <p className="link">Read more</p>
-          </Link>
-        </div>
-      </div>
-      <div className="item">
-        <img src={logo} alt="coderation" />
-        <div className="info">
-          <p className="date">
-            20.09.2020
-          </p>
-          <p className="desc">
-            Lorem ipsum dolor sit.
-            Lorem ipsum dolor sit.
-          </p>
-          <Link to="/events/001">
-            <p className="link">Read more</p>
-          </Link>
-        </div>
-      </div>
-
     </StyledEvents>
     </>
   )
