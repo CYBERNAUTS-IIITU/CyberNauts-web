@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react'
 import styled from 'styled-components'
 import Button from './shared/Button';
+import { motion } from 'framer-motion';
 const waves = require('../images/waves-01.png');
 
 interface Props {
@@ -87,7 +88,14 @@ function About({ }: Props): ReactElement {
     <StyledAbout>
       {/* <strong className="title">What Is CyberNauts?</strong> */}
       <div className="left">
-        <p>?</p>
+      <div>
+          <motion.div
+             animate={{ scale: [1, 0.8, 1] }}
+             transition={{ duration: 1.5, loop: Infinity }}
+          >
+            <p>?</p>
+          </motion.div>
+        </div>
       </div>
       <div className="right">
         <div className="info">

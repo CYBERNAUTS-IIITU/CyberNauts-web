@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import LeftBlob from './shared/LeftBlob';
 import RightBlob from './shared/RightBlob';
 import ParticleBg from './ParticleBg';
+import SectionHeading from './shared/SectionHeading';
 const reactLogo = require( '../images/React-icon.svg');
 const webd = require('../images/webd-alt.png');
 const appd = require('../images/appd.png');
@@ -18,6 +19,7 @@ const StylesTech = styled.section`
   position: relative;
   margin-top: auto;
   width: 100%;
+  height: 90vh;
   overflow: hidden;
 
   h1 {
@@ -64,12 +66,12 @@ const StylesTech = styled.section`
       }
     }
   }
-
-  @media (max-width: 786px) {
+   @media (max-width: 786px) {
     h1 {
       font-size: 34px;
     }
   }
+ 
 `;
 
 function Tech({ }: Props): ReactElement {
@@ -78,7 +80,7 @@ function Tech({ }: Props): ReactElement {
       <ParticleBg />
       <LeftBlob />
       <RightBlob />
-      <h1>We Work With</h1>
+      <SectionHeading>We Work With</SectionHeading>
       <div className="tech-list">
         <div className="tech-item">
           <img src={webd} alt="react.js" />

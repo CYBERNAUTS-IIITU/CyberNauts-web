@@ -5,6 +5,8 @@ import About from "../components/About";
 import Tech from "../components/Tech";
 import Footer from "../components/shared/Footer";
 import Layout from "../components/Layout";
+import Events from "../components/Events";
+import Contact from "../components/Contact";
 // import Layout from "../components/layout";
 
 const App = () => {
@@ -15,6 +17,8 @@ const App = () => {
         <Hero />
         <About />
         <Tech />
+        <Events />
+        <Contact />
         <Footer />
         </>
       </Layout>
