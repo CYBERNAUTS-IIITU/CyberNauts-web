@@ -4,7 +4,6 @@ import LeftBlob from './shared/LeftBlob';
 import RightBlob from './shared/RightBlob';
 import ParticleBg from './ParticleBg';
 import SectionHeading from './shared/SectionHeading';
-const reactLogo = require( '../images/React-icon.svg');
 const webd = require('../images/webd-alt.png');
 const appd = require('../images/appd.png');
 
@@ -19,7 +18,7 @@ const StylesTech = styled.section`
   position: relative;
   margin-top: auto;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   overflow: hidden;
 
   h1 {
