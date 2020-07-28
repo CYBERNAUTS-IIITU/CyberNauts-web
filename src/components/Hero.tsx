@@ -1,15 +1,17 @@
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import Button from './shared/Button';
 import ParticleBg from './ParticleBg';
-const notebook = require( '../images/notebook.png');
-const cloud = require( '../images/cloud.svg');
-const man1= require( '../images/man-01.svg');
-const man2= require( '../images/man-02.svg');
-const e1= require( '../images/el-01.svg');
-const e2= require( '../images/el-02.svg');
-const process= require( '../images/process.svg');
-const blob= require( '../images/shape-01.png');
+import Typist from 'react-typist';
+const notebook = require('../images/notebook.png');
+const cloud = require('../images/cloud.svg');
+const man1 = require('../images/man-01.svg');
+const man2 = require('../images/man-02.svg');
+const e1 = require('../images/el-01.svg');
+const e2 = require('../images/el-02.svg');
+const process = require('../images/process.svg');
+const blob = require('../images/shape-01.png');
 
 interface Props {
 
@@ -115,24 +117,42 @@ const Container = styled.main`
 function Hero({ }: Props): ReactElement {
   return (
     <>
-    <ParticleBg>
-      <Container>
-        <div className="left">
-          <h1>&lt;CyberNauts/&gt;</h1>
-          <p>Web & Mobile Development Club IIIT UNA</p>
-          <Button>Explore</Button>
-        </div>
-        <div className="right">
-          <img className="img-1" src={e1} alt="cloud-svg" />
-          <img className="img-2" src={cloud} alt="cloud-svg" />
-          <img className="img-3" src={man1} alt="cloud-svg" />
-          <img className="feat-img" src={notebook} alt="laptop" />
-          <img className="img-4" src={e2} alt="cloud-svg" />
-          <img className="img-5" src={man2} alt="cloud-svg" />
-          <img className="img-6" src={process} alt="cloud-svg" />
-        </div>
-        <img className="blob" src={blob} alt="shape"/>
-      </Container>
+      <ParticleBg>
+        <Container>
+          <div className="left">
+              <h1>
+                <Typist
+                  avgTypingDelay={80}
+                  cursor={{
+                    show: true,
+                    blink: true,
+                    element: '|',
+                    hideWhenDone: true,
+                  }}
+                >
+                  &lt;CyberNauts/&gt;
+              </Typist>
+              </h1>
+              <p>Web & Mobile Development Club IIIT UNA</p>
+            <motion.div
+              animate={{ scale: [1, 0.95, 1] }}
+              transition={{ duration: 1.3, loop: Infinity }}
+            >
+            <Button>Explore</Button>
+
+            </motion.div>
+          </div>
+          <div className="right">
+            <img className="img-1" src={e1} alt="cloud-svg" />
+            <img className="img-2" src={cloud} alt="cloud-svg" />
+            <img className="img-3" src={man1} alt="cloud-svg" />
+            <img className="feat-img" src={notebook} alt="laptop" />
+            <img className="img-4" src={e2} alt="cloud-svg" />
+            <img className="img-5" src={man2} alt="cloud-svg" />
+            <img className="img-6" src={process} alt="cloud-svg" />
+          </div>
+          <img className="blob" src={blob} alt="shape" />
+        </Container>
       </ParticleBg>
     </>
   )

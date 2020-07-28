@@ -26,8 +26,13 @@ const Nav = styled.nav`
   height: 10vh;
   overflow: hidden;
   background: linear-gradient(330deg, transparent, transparent 11%, rgba(0, 0, 0, 0.02) 11%, rgba(0, 0, 0, 0.02) 32%, transparent 32%, transparent 58%, rgba(0, 0, 0, 0.02) 58%, rgba(0, 0, 0, 0.02) 79%, transparent 79%, transparent), linear-gradient(127deg, #a0459c, #241aa8);
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  
   &:first-child {
+    cursor: pointer;
     padding-left: 24px;
   }
 
@@ -36,6 +41,7 @@ const Nav = styled.nav`
     margin-left: auto;
     list-style: none;
     & li {
+      cursor: pointer;
       margin-left: 24px;
       position: relative;
 
@@ -60,6 +66,7 @@ const Nav = styled.nav`
     width: 235px;
     margin-left: auto;
     color: #fff;
+    font-size: 1.3rem;
     font-weight: 700;
     background-image: linear-gradient(113deg, #fd9e4c, #f60d45);
     text-align: center;

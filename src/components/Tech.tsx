@@ -4,6 +4,8 @@ import LeftBlob from './shared/LeftBlob';
 import RightBlob from './shared/RightBlob';
 import ParticleBg from './ParticleBg';
 const reactLogo = require( '../images/React-icon.svg');
+const webd = require('../images/webd-alt.png');
+const appd = require('../images/appd.png');
 
 interface Props {
 
@@ -42,9 +44,10 @@ const StylesTech = styled.section`
       background: #fafafa;
       color: rgba(0,0,0,0.6);
       padding: 24px;
+      padding-bottom: 48px;
       margin: 24px;
-      height: 150px;
-      width: 150px;
+      height: 50vh;
+      width: 50vh;
       text-align: center;
       font-size: 1.2rem;
       font-weight: bold;
@@ -54,6 +57,17 @@ const StylesTech = styled.section`
       &:hover {
           box-shadow: 0 20px 25px 0 rgba(212,34,31,0.3);
         }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 786px) {
+    h1 {
+      font-size: 34px;
     }
   }
 `;
@@ -67,58 +81,12 @@ function Tech({ }: Props): ReactElement {
       <h1>We Work With</h1>
       <div className="tech-list">
         <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          React.JS
+          <img src={webd} alt="react.js" />
+            <p>Web Development</p>
         </div>
         <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          Gatsby.JS
-        </div>
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          Next.JS
-        </div>
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          Node.JS
-        </div>
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          Firebase
-        </div>
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          Flutter
-        </div>
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          React Native
-        </div>
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          SaSS
-        </div>
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          TypeScript
-        </div>
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          JavaScript
-        </div>
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js" />
-          BootStrap
-        </div>
-
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js"/>
-          HTML
-        </div>
-
-        <div className="tech-item">
-          <img src={reactLogo} alt="react.js"/> 
-          CSS
+          <img src={appd} alt="react.js" />
+            <p>App Development</p>
         </div>
       </div>
     </StylesTech>

@@ -10,6 +10,7 @@
 html {
   font-family: "Lora", serif, -apple-system, system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
 }
 h1,
 h2,
@@ -18,4 +19,24 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", serif;
+}
+
+
+body::-webkit-scrollbar {
+  width: 4px;               /* width of the entire scrollbar */
+  /* z-index: -10; */
+}
+body::-webkit-scrollbar-track {
+  /* background: orange; */
+          /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  /* background-color: blue; */
+  background-image: linear-gradient(138deg, #fd9e4c, #f60d45);
+      /* color of the scroll thumb */
+  border-radius: 20px;    
+     /* roundness of the scroll thumb */
+  
+  /* border: 1px solid orange;   */
+  /* creates padding around scroll thumb */
 }
