@@ -26,10 +26,10 @@ body::-webkit-scrollbar {
   width: 4px;               /* width of the entire scrollbar */
   /* z-index: -10; */
 }
-body::-webkit-scrollbar-track {
-  /* background: orange; */
-          /* color of the tracking area */
-}
+/* body::-webkit-scrollbar-track {
+  background: orange;
+          color of the tracking area
+} */
 body::-webkit-scrollbar-thumb {
   /* background-color: blue; */
   background-image: linear-gradient(138deg, #fd9e4c, #f60d45);
@@ -39,4 +39,8 @@ body::-webkit-scrollbar-thumb {
   
   /* border: 1px solid orange;   */
   /* creates padding around scroll thumb */
+}
+
+a {
+  text-decoration: none;
 }

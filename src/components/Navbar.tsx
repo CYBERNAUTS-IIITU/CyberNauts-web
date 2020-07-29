@@ -1,26 +1,10 @@
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
-
-
-interface Props {
-  
-}
-
-const NavLink = styled.a`
-  text-decoration: none;
-  color: #fff;
-  opacity: 0.7;
-  letter-spacing: 2px;
-  font-weight: 400;
-
-  &:hover {
-    opacity: 1;
-  }
-`;
+import {Link}  from 'gatsby';
 
 const Nav = styled.nav`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 10vh;
@@ -30,15 +14,11 @@ const Nav = styled.nav`
   top: 0;
   left: 0;
   z-index: 10;
-  
-  &:first-child {
-    cursor: pointer;
-    padding-left: 24px;
-  }
+
 
   & ul {
     display: flex;
-    margin-left: auto;
+    margin: auto;
     list-style: none;
     & li {
       cursor: pointer;
@@ -55,6 +35,18 @@ const Nav = styled.nav`
         top: 50%;
         margin-top: -2px;
         right: -10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        opacity: 0.7;
+        letter-spacing: 2px;
+        font-weight: 400;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
@@ -76,22 +68,23 @@ const Nav = styled.nav`
 
   @media (max-width: 786px) {
     ul {
-      display: none;
+      /* display: none; */
+      /* margin: auto; */
     }
   }
 `;
 
-function Navbar({}: Props): ReactElement {
+function Navbar(): ReactElement {
   return (
-    <Nav>
-      <NavLink>Home</NavLink>
+    <Nav id="home">
       <ul>
-        <li><NavLink>About  Us</NavLink></li>
-        <li><NavLink>Events</NavLink></li>
-        <li><NavLink>Team</NavLink></li>
-        <li><NavLink>Projects</NavLink></li>
+        {/* <li><Link to="/about">About</Link></li> */}
+        <li> <Link to="/">Home</Link></li>
+        <li><Link to="/about">About  Us</Link></li>
+        <li><Link to="/about">Tech</Link></li>
+        <li><Link to="/about">Projects</Link></li>
       </ul>
-      <button>Login</button>
+      {/* <button>Login</button> */}
     </Nav>
   )
 }

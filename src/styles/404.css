@@ -220,8 +220,18 @@
     .box_astronaut{
         top: 70%;
     }
+
+    .object_earth {
+        top: 10%;
+    }
+
+    .object_moon { 
+        left: 40%
+    }
     
     .central-body{
-        padding-top: 25%;
+        padding-top: 50%;
     }
+
+
 }
