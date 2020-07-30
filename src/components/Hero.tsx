@@ -33,6 +33,7 @@ const Container = styled.main`
       color: #a0459c;
       font-size: 4rem;
       letter-spacing: 5px;
+      font-weight: 700;
     }
     p {
       color: #989898;

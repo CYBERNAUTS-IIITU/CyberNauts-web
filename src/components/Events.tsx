@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import SectionHeading from './shared/SectionHeading';
 const logo = require('../images/React-icon.svg');
 
@@ -60,9 +60,9 @@ export default function Events() {
           <p className="desc">
             Online workshop on getting started with react;
           </p>
-          <Link to="/events/001">
+          {/* <Link to="/events/001">
             <p className="link">Read more</p>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="item">
@@ -74,9 +74,9 @@ export default function Events() {
           <p className="desc">
             Getting started with routing in a react SPA.
           </p>
-          <Link to="/events/001">
+          {/* <Link to="/events/001">
             <p className="link">Read more</p>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </StyledEvents>
