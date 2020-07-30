@@ -12,7 +12,7 @@ const teamMembers = [
   { name: 'Devang Sharma', img: require('../images/team/ds.jpg'), role: 'Flutter Developer', ln: '', ig: 'https://instagram.com/_devang_sharma_', tw: '', web: '' },
   { name: 'Vanshika Pandey', img: require('../images/team/vp.jpg'), role: 'Web Developer', ln: '', ig: 'https://instagram.com/vanshika_pandeyyy', tw: '', web: '' },
   { name: 'Harsh Anand', img: require('../images/team/ha.jpg'), role: 'Flutter Developer', ln: '', ig: 'https://instagram.com/oyee_anand', tw: '', web: '' },
-  { name: 'Muskan Yadav', img: require('../images/team/my.jpg'), role: 'Web Developer', ln: '', ig: 'https://instagram.com/agrlmuskan', tw: '', web: '' },
+  { name: 'Muskan Agrawal', img: require('../images/team/my.jpg'), role: 'Web Developer', ln: '', ig: 'https://instagram.com/agrlmuskan', tw: '', web: '' },
 ];
 
 const Team = styled.div`
