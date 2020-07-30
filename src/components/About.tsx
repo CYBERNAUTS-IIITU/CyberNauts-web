@@ -43,10 +43,10 @@ const StyledAbout = styled.section`
     margin: 50px 0;
     .info {
       padding: 48px;
-      padding-right: 12px;
+      /* padding-right: 12px; */
       text-align: left;
       text-transform: capitalize;
-      letter-spacing: 1.5px;
+      letter-spacing: 1px;
       line-height: 32px;
       box-shadow: 0 10px 25px 0 rgba(212, 34, 31, 0.3);
     }
@@ -67,13 +67,22 @@ const StyledAbout = styled.section`
   }
 
   @media (max-width: 786px) {
+    & .left p {
+      font-size: 10rem;
+      margin-bottom: -100px;
+      margin-top: 12px;
+    }
+
     .right {
       width: 80%;
 
       .info {
-        font-size: 1rem;
+        font-size: 8rem;
         letter-spacing: 1px;
         padding: 24px;
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -85,7 +94,7 @@ const StyledAbout = styled.section`
 
 function About({ }: Props): ReactElement {
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       {/* <strong className="title">What Is CyberNauts?</strong> */}
       <div className="left">
       <div>

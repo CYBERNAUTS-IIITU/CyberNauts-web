@@ -137,10 +137,10 @@
     transition: transform ease-in 5s infiite;
 
 }
-
+/* 
 .earth-moon{
     
-}
+} */
 
 .object_astronaut{
     animation: rotate-astronaut 30s infinite linear both alternate;

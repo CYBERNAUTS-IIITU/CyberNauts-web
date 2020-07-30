@@ -11,6 +11,8 @@ html {
   font-family: "Lora", serif, -apple-system, system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
 }
 h1,
 h2,

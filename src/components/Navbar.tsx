@@ -80,9 +80,9 @@ function Navbar(): ReactElement {
       <ul>
         {/* <li><Link to="/about">About</Link></li> */}
         <li> <Link to="/">Home</Link></li>
-        <li><Link to="/about">About  Us</Link></li>
-        <li><Link to="/about">Tech</Link></li>
-        <li><Link to="/about">Projects</Link></li>
+        <li><Link to="#about">About  Us</Link></li>
+        <li><Link to="/team">Team</Link></li>
+        <li><Link to="/projects">Projects</Link></li>
       </ul>
       {/* <button>Login</button> */}
     </Nav>
