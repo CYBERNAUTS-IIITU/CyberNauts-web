@@ -10,6 +10,6 @@ export default styled.h1`
     -webkit-text-fill-color: transparent;
     color: #fd9e4c;
     font-size: 54px;
-    line-height: 38.6px;
+    line-height: 60px;
     font-weight: 800;
 `;

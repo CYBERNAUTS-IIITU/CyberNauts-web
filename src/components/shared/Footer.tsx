@@ -53,7 +53,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <img className="iiitu" src={iiitulogo} alt="IIIT Una logo" />
-      <img src={logo} alt="cybernauts logo" />
+      {/* <img src={logo} alt="cybernauts logo" /> */}
       <p className="copy">No &copy; copyright. Feel free to use designs.</p>
     </StyledFooter>
   )

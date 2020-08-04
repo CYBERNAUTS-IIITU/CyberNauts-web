@@ -111,7 +111,7 @@ function About({ }: Props): ReactElement {
           <p><span>CyberNauts</span> is one of the technical clubs of Indian Institute of Information Technology Una currenlety operating at transit campus II.</p>
           <p>We are focused in developing the Web and mobile development community in our institute. </p>
           <p>We organize workshop on the various aspects of learning web and mobile development.</p>
-          <Button>Know More {'>'}</Button>
+          {/* <Button>Know More {'>'}</Button> */}
         </div>
       </div>
       <img className="waves" src={waves} alt="waves" />
